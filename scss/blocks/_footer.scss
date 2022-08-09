@@ -1,0 +1,165 @@
+@use '../global/vars' as *;
+
+.footer {
+    @include adaptiveValue('padding-block', 90, 50);
+
+    &__top {
+        display: grid;
+        grid-template-columns: 1fr rem(246);
+        align-items: start;
+        gap: rem(30) rem(20);
+        padding-bottom: rem(45);
+    }
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        column-gap: rem(60);
+    }
+
+    &__list {
+        max-width: rem(300);
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: rem(10);
+        }
+    }
+
+    &__link {
+        display: block;
+        font-size: rem(14);
+        line-height: 1.4;
+        color: $text-light;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__payments {
+        display: flex;
+        align-items: center;
+        gap: rem(15) rem(25);
+    }
+
+    &__contacts {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
+    &__contacts-btn {
+        margin-bottom: rem(16);
+    }
+
+    &__phone {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 700;
+        line-height: 1;
+
+        display: inline-flex;
+        column-gap: rem(15);
+        align-items: center;
+        margin-bottom: rem(20);
+
+        svg circle {
+            transition: fill .3s;
+        }
+
+        &:hover {
+            text-decoration: underline;
+
+            svg circle {
+                fill: $accent-hover;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__social-link {
+        width: rem(41);
+        height: rem(41);
+        border-radius: 50%;
+        background-color: $accent-color;
+
+        display: grid;
+        place-content: center;
+        transition: background-color .3s;
+
+        &:hover {
+            background-color: $accent-hover;
+        }
+    }
+
+    &__bottom {
+        padding-top: rem(42);
+        border-top: rem(1) solid rgba($accent-color, .33);
+    }
+
+    &__copy {
+        font-size: rem(13);
+        line-height: 1.4;
+        color: $text-light;
+        text-align: center;
+        max-width: rem(666);
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: rem(1050)) {
+    .footer {
+        &__top {
+            grid-template-columns: 1fr;
+        }
+
+        &__contacts {
+            grid-column: auto;
+            grid-row: auto;
+            order: 1;
+            text-align: center;
+        }
+
+        &__contacts-btn {
+            max-width: fit-content;
+            margin-inline: auto;
+        }
+
+        &__content {
+            gap: rem(15);
+            order: 2;
+            justify-content: space-around;
+        }
+
+        &__social {
+            justify-content: center;
+            column-gap: rem(25);
+        }
+
+        &__payments {
+            justify-content: center;
+            order: 3;
+        }
+    }
+}
+
+@media (max-width: rem(640)) {
+    .footer {
+        &__content {
+            flex-direction: column;
+            text-align: center;
+
+            & > * {
+                margin-inline: auto;
+            }
+        }
+
+        &__payments {
+            flex-wrap: wrap;
+        }
+    }
+}

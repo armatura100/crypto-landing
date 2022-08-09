@@ -1,0 +1,74 @@
+@use '../global/vars' as *;
+
+.steps {
+    padding-block: rem(80);
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        column-gap: rem(42);
+        row-gap: rem(20);
+        counter-reset: increment;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        padding-top: rem(30);
+        flex-basis: 33.333%;
+        position: relative;
+        counter-increment: increment;
+
+        &::after {
+            content: '0' counter(increment);
+            font-family: 'Manrope', sans-serif;
+            font-weight: 800;
+            font-size: rem(60);
+            line-height: 1;
+            color: #E4EBFA;
+
+            position: absolute;
+            top: 0;
+            left: rem(60);
+            z-index: -1;
+        }
+    }
+
+    &__item-img {
+        max-width: rem(110);
+    }
+
+    &__item-text {
+        font-size: rem(18);
+        line-height: 1.4;
+        color: $dark-color;
+    }
+}
+
+@media (max-width: rem(1220)) {
+    .steps {
+        &__list {
+            flex-direction: column;
+        }
+
+        &__item {
+            gap: rem(10) rem(15);
+        }
+
+        &__item-img {
+            max-width: rem(100);
+        }
+    }
+}
+
+@media (max-width: rem(410)) {
+    .steps {
+        &__item {
+            column-gap: 0;
+        }
+
+        &__item-text {
+            font-size: rem(16);
+        }
+    }
+}

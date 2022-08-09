@@ -1,0 +1,207 @@
+@use '../global/vars' as *;
+
+.services {
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: rem(32);
+        @include adaptiveValue('margin-bottom', 120, 70);
+    }
+
+    &__suptitle {
+        @include adaptiveValue('font-size', 24, 16);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $text-light;
+        margin-bottom: rem(4);
+    }
+
+    &__title {
+        font-family: 'Manrope', sans-serif;
+        @include adaptiveValue('font-size', 38, 24);
+        line-height: 1.3;
+        font-weight: 600;
+        margin-bottom: rem(27);
+
+        span {
+            color: $accent-color;
+        }
+    }
+
+    &__text {
+        @include adaptiveValue('font-size', 20, 16);
+        color: #000;
+    }
+
+    &__img {
+        max-width: 100%;
+    }
+
+    &__slider {
+        max-width: rem(1920);
+
+        .swiper-wrapper {
+            @include adaptiveValue('margin-bottom', 100, 15);
+        }
+
+        .swiper-pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include adaptiveValue('column-gap', 26, 10);
+            @include adaptiveValue('padding-bottom', 130, 50);
+        }
+
+        .swiper-pagination-bullet {
+            cursor: pointer;
+            @include adaptiveValue('width', 35, 10);
+            @include adaptiveValue('height', 35, 10);
+            border-radius: 50%;
+            background-color: #E5E4F8;
+            transition: background-color .3s;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #A9A7FD;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            box-shadow: 0 0 rem(25) rgba(0, 0, 0, .1);
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+            width: rem(81);
+            height: rem(81);
+            background-color: #467DDB;
+            border-radius: 50%;
+            z-index: 1;
+
+            position: absolute;
+            top: rem(218);
+
+            transition: background-color .3s;
+
+            path {
+                transition: fill .3s;
+            }
+        }
+
+        .swiper-button-prev {
+            left: rem(42);
+        }
+
+        .swiper-button-next {
+            right: rem(42);
+        }
+
+        .swiper-button-disabled {
+            background-color: #fff;
+
+            path {
+                fill: #467DDB;
+            }
+        }
+    }
+
+    &__item {
+        background-color: #fff;
+        padding: rem(28) rem(40) rem(40);
+        box-shadow: 0 rem(11) rem(116) rgba(151, 164, 183, 0.11);
+        border-radius: rem(15);
+    }
+
+    &__item-img {
+        margin-bottom: rem(20);
+    }
+
+    &__item-title {
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: rem(10);
+    }
+
+    &__item-text {
+        font-size: rem(15);
+    }
+
+    &__item-hidden {
+        @media (any-hover: hover) {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .3s;
+        }
+    }
+
+    &__list {
+        font-size: rem(15);
+        margin-block: rem(14) rem(22);
+    }
+
+    &__list-item {
+        padding-left: rem(18);
+        margin-bottom: rem(6);
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            width: rem(9);
+            height: rem(9);
+            background-color: $accent-color;
+            border-radius: 50%;
+
+            position: absolute;
+            left: 0;
+            top: .8em;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+@media (max-width: rem(1220)) {
+    .services {
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: rem(40);
+            height: rem(40);
+
+            svg {
+                width: rem(20);
+                height: rem(15);
+            }
+        }
+
+        .swiper-button-prev {
+            left: rem(10);
+        }
+
+        .swiper-button-next {
+            right: rem(10);
+        }
+    }
+}
+
+@media (max-width: rem(1050)) {
+    .services__img {
+        width: 50%;
+    }
+}
+
+@media (max-width: rem(640)) {
+    .services {
+        &__img {
+            display: none;
+        }
+
+        &__item {
+            padding: rem(15) rem(24) rem(24);
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+    }
+}

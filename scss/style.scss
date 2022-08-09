@@ -1,0 +1,15 @@
+@use 'global/reset';
+
+@use 'vendors/swiper-vars';
+@use 'vendors/swiper';
+
+@use 'global/global';
+
+
+@use 'blocks/header';
+@use 'blocks/intro';
+@use 'blocks/steps';
+@use 'blocks/services';
+@use 'blocks/faq';
+@use 'blocks/consult';
+@use 'blocks/footer';

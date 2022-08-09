@@ -1,0 +1,66 @@
+@use 'vars' as *;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem(20);
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: #fff;
+    color: $text-color;
+
+    &::before {
+        content: '';
+        display: block;
+        height: var(--header-height);
+        transition: height .3s;
+    }
+
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+.container {
+    width: min(100% - rem(20), rem(1200));
+    margin-inline: auto;
+}
+
+.btn {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: rem(16);
+    line-height: 1.37;
+    color: $accent-color;
+    display: block;
+    padding: rem(12) rem(25);
+    border: rem(2) solid $accent-color;
+    border-radius: rem(5);
+
+    transition: background-color .3s;
+
+    &:hover {
+        background-color: $accent-color;
+        color: #fff;
+    }
+}
+
+.btn--accent {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    line-height: 1.35;
+    color: #fff;
+    padding: rem(19) rem(35);
+    background-color: $accent-color;
+    border-radius: rem(5);
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: rem(10);
+
+    transition: background-color .3s;
+
+    &:hover {
+        background-color: $accent-hover;
+    }
+}

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Crypto</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo header__logo" href="#">
+                    <img class="logo__img" src="img/logo.svg" alt="logo">
+                </a>
+                <nav class="menu">
+                    <button class="menu__btn" type="button">
+                        <span></span>
+                    </button>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                Услуги
+                            </a>
+                            <div class="menu__arrow">
+                                <svg class="menu__arrow-img" width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.3902 4.86424L9.84025 1.07685C9.94325 0.989247 10 0.872312 10 0.747627C10 0.622941 9.94325 0.506006 9.84025 0.418408L9.51261 0.139492C9.29911 -0.0419999 8.95212 -0.0419999 8.73895 0.139492L5.00207 3.31986L1.26105 0.135963C1.15804 0.0483653 1.02072 -3.92497e-07 0.874302 -3.98897e-07C0.727718 -4.05304e-07 0.590401 0.0483653 0.487313 0.135963L0.159755 0.414879C0.0567477 0.502546 2.11343e-07 0.619412 2.05893e-07 0.744097C2.00443e-07 0.868783 0.0567477 0.985718 0.159755 1.07332L4.61386 4.86424C4.7172 4.95205 4.85516 5.00028 5.00183 5C5.14906 5.00028 5.28695 4.95205 5.3902 4.86424Z" fill="#151618" />
+                                </svg>
+                            </div>
+                            <ul class="menu__sub-list">
+                                <li class="menu__sub-item">
+                                    <a class="menu__sub-link" href="#">Услуга 1</a>
+                                </li>
+                                <li class="menu__sub-item">
+                                    <a class="menu__sub-link" href="#">Услуга 2</a>
+                                </li>
+                                <li class="menu__sub-item">
+                                    <a class="menu__sub-link" href="#">Услуга 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__nav">
+                    <div class="lang">
+                        <div class="lang__selected" data-dropdown>
+                            <img class="lang__flag" src="img/langs/ukrainian.jpg" alt="ukrainian">
+                            <span class="lang__text">rus</span>
+                            <div class="lang__arrow">
+                                <img class="lang__arrow-img" src="img/icons/arrows/menu-arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                        <ul class="lang__list">
+                            <li class="lang__item">
+                                <a class="lang__link" href="#">
+                                    <img class="lang__flag" src="img/langs/estonia.jpg" alt="estonia">
+                                    <span class="lang__text">est</span>
+                                </a>
+                            </li>
+                            <li class="lang__item">
+                                <a class="lang__link" href="#">
+                                    <img class="lang__flag" src="img/langs/english.jpg" alt="english">
+                                    <span class="lang__text">eng</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__img" src="img/icons/whatsapp.svg" alt="whatsapp">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__img" src="img/icons/telegram.svg" alt="telegram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="tel:+3726417777">
+                                <img class="social__img" src="img/icons/phone.svg" alt="phone">
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="btn header__top-btn" href="#">
+                        Запросить предложение
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="intro">
+            <div class="container">
+                <div class="intro__body">
+                    <div class="intro__content">
+                        <h1 class="intro__title">
+                            Мы предоставим
+                        </h1>
+                        <p class="intro__text">
+                            правовой и налоговый консалтинг, сопровождение проектов, связанных с криптовалютами и технологиями блокчейна
+                        </p>
+                        <a class="btn--accent intro__btn" href="#">
+                            <span>Запросить предложение</span>
+                            <img src="img/icons/arrows/btn-arrow.svg" alt="arrow">
+                        </a>
+                    </div>
+                    <img class="intro__img" src="img/intro.svg" alt="intro">
+                </div>
+            </div>
+        </section>
+
+        <section class="steps">
+            <div class="container">
+                <ol class="steps__list">
+                    <li class="steps__item">
+                        <img class="steps__item-img" src="img/steps/1.svg" alt="step 1">
+                        <p class="steps__item-text">
+                            Запросите предложение на получение криптовалютной лицензии через наш сайт
+                        </p>
+                    </li>
+                    <li class="steps__item">
+                        <img class="steps__item-img" src="img/steps/2.svg" alt="step 2">
+                        <p class="steps__item-text">
+                            Мы отправим ценовое предложение и проведем подробную консультацию
+                        </p>
+                    </li>
+                    <li class="steps__item">
+                        <img class="steps__item-img" src="img/steps/3.svg" alt="step 3">
+                        <p class="steps__item-text">
+                            Получив крипто-лицензию мы окажем вам юридическую и бухгалтерскую помощь
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <div class="services__inner">
+                    <div class="services__content">
+                        <p class="services__suptitle">
+                            какие услуги
+                        </p>
+                        <h3 class="services__title">
+                            Мы поможем <span>решить</span> все <span>вопросы</span>
+                        </h3>
+                        <p class="services__text">
+                            Один из наших главных проектов — обеспечение криптопроцессинга. Мы предоставляем клиентам возможность открывать мерчанты в «крипте», то есть получать в ней оплату за свои товары или услуги. На данный момент мы обеспечиваем первый в Украине легальный криптопроцессинг. Компании, которые желают подключится к нашему процессингу, могут обращаться в нашу компанию.
+                        </p>
+                    </div>
+                    <img class="services__img" src="img/services.svg" alt="services">
+                </div>
+            </div>
+            <div class="services__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="services__item swiper-slide">
+                        <div class="services__item-visible">
+                            <img class="services__item-img" src="img/services/1.svg" alt="service">
+                            <h4 class="services__item-title">
+                                Услуга 1
+                            </h4>
+                            <p class="services__item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                            </p>
+                        </div>
+                        <div class="services__item-hidden">
+                            <ul class="services__list">
+                                <li class="services__list-item">lorem ipsum</li>
+                                <li class="services__list-item">one two three</li>
+                                <li class="services__list-item">this is a slide</li>
+                                <li class="services__list-item">and it can drop down</li>
+                            </ul>
+                            <a class="btn--accent services__item-btn" href="#">
+                                <span>Заказать</span>
+                                <img src="img/icons/arrows/btn-arrow.svg" alt="arrow">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="services__item swiper-slide">
+                        <div class="services__item-visible">
+                            <img class="services__item-img" src="img/services/2.svg" alt="service">
+                            <h4 class="services__item-title">
+                                Услуга 2
+                            </h4>
+                            <p class="services__item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                            </p>
+                        </div>
+                        <div class="services__item-hidden">
+                            <ul class="services__list">
+                                <li class="services__list-item">lorem ipsum</li>
+                                <li class="services__list-item">one two three</li>
+                                <li class="services__list-item">this is a slide</li>
+                                <li class="services__list-item">and it can drop down</li>
+                            </ul>
+                            <a class="btn--accent services__item-btn" href="#">
+                                <span>Заказать</span>
+                                <img src="img/icons/arrows/btn-arrow.svg" alt="arrow">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="services__item swiper-slide">
+                        <div class="services__item-visible">
+                            <img class="services__item-img" src="img/services/3.svg" alt="service">
+                            <h4 class="services__item-title">
+                                Услуга 3
+                            </h4>
+                            <p class="services__item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                            </p>
+                        </div>
+                        <div class="services__item-hidden">
+                            <ul class="services__list">
+                                <li class="services__list-item">lorem ipsum</li>
+                                <li class="services__list-item">one two three</li>
+                                <li class="services__list-item">this is a slide</li>
+                                <li class="services__list-item">and it can drop down</li>
+                            </ul>
+                            <a class="btn--accent services__item-btn" href="#">
+                                <span>Заказать</span>
+                                <img src="img/icons/arrows/btn-arrow.svg" alt="arrow">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="services__item swiper-slide">
+                        <div class="services__item-visible">
+                            <img class="services__item-img" src="img/services/4.svg" alt="service">
+                            <h4 class="services__item-title">
+                                Услуга 4
+                            </h4>
+                            <p class="services__item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                            </p>
+                        </div>
+                        <div class="services__item-hidden">
+                            <ul class="services__list">
+                                <li class="services__list-item">lorem ipsum</li>
+                                <li class="services__list-item">one two three</li>
+                                <li class="services__list-item">this is a slide</li>
+                                <li class="services__list-item">and it can drop down</li>
+                            </ul>
+                            <a class="btn--accent services__item-btn" href="#">
+                                <span>Заказать</span>
+                                <img src="img/icons/arrows/btn-arrow.svg" alt="arrow">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="services__item swiper-slide">
+                        <div class="services__item-visible">
+                            <img class="services__item-img" src="img/services/4.svg" alt="service">
+                            <h4 class="services__item-title">
+                                Услуга 4
+                            </h4>
+                            <p class="services__item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                            </p>
+                        </div>
+                        <div class="services__item-hidden">
+                            <ul class="services__list">
+                                <li class="services__list-item">lorem ipsum</li>
+                                <li class="services__list-item">one two three</li>
+                                <li class="services__list-item">this is a slide</li>
+                                <li class="services__list-item">and it can drop down</li>
+                            </ul>
+                            <a class="btn--accent services__item-btn" href="#">
+                                <span>Заказать</span>
+                                <img src="img/icons/arrows/btn-arrow.svg" alt="arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev">
+                    <svg width="41" height="29" viewBox="0 0 41 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3966 28.6663C14.0277 28.9995 13.4586 28.9706 13.1255 28.6017L0.931913 15.1017C0.622438 14.7591 0.622438 14.2378 0.931913 13.8952L13.1255 0.395174C13.4586 0.0263057 14.0277 -0.00263062 14.3966 0.330537C14.7655 0.663709 14.7944 1.23282 14.4612 1.60169L3.62548 13.5984L39.3998 13.5984C39.8969 13.5984 40.2998 14.0014 40.2998 14.4984C40.2998 14.9955 39.8969 15.3984 39.3998 15.3984L3.62548 15.3984L14.4612 27.3952C14.7944 27.764 14.7655 28.3332 14.3966 28.6663Z" fill="#fff" />
+                    </svg>
+                </div>
+                <div class="swiper-button-next">
+                    <svg width="41" height="29" viewBox="0 0 41 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.6034 0.333682C26.9723 0.000511926 27.5414 0.0294501 27.8745 0.398317L40.0681 13.8983C40.3776 14.241 40.3776 14.7622 40.0681 15.1048L27.8745 28.6048C27.5414 28.9737 26.9722 29.0026 26.6034 28.6695C26.2345 28.3363 26.2056 27.7672 26.5387 27.3983L37.3745 15.4016L1.60019 15.4016C1.10314 15.4016 0.700193 14.9986 0.700193 14.5016C0.700193 14.0045 1.10314 13.6016 1.60019 13.6016L37.3745 13.6016L26.5388 1.60483C26.2056 1.23597 26.2345 0.666852 26.6034 0.333682Z" fill="#fff" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <p class="faq__suptitle">
+                    Советы и рекомендации
+                </p>
+                <h3 class="faq__title">
+                    Предпринимателям начинающих деятельность <span>в сфере криптовалютного бизнеса</span>
+                </h3>
+                <div class="faq__accordion">
+                    <div class="faq__item">
+                        <div class="faq__item-trigger">
+                            <p class="faq__item-number">
+                                1
+                            </p>
+                            <h6 class="faq__item-title">
+                                Определите благоприятную страну для открытия своей компании
+                            </h6>
+                            <div class="faq__item-icon"></div>
+                        </div>
+                        <div class="faq__item-body">
+                            <div class="faq__item-content">
+                                <p class="faq__item-text">
+                                    Выгодно для тех кому важно с лёгкостью внедрить интернет-банкинг. Британские Виргинские острова (BVI) — лучшее место для регистрации компании, если вы являетесь интернет-предпринимателем с доходом, генерируемым по всему миру, который вы хотели бы оставить в оффшоре для последующего использования в новых бизнес-проектах.
+                                </p>
+                                <p class="faq__item-text">
+                                    Одним из наиболее выгодных аспектов деятельности международной зарегистрированной бизнес-компании на BVI является то, что вы можете связать эту структуру с зарубежным банковским счетом, открытым в уважаемой юрисдикции, в том числе Европы. Или, например, в такой как Гонконг или Сингапур. Азиатские банки особенно охотно работают с компаниями, зарегистрированными на Британских Виргинских Островах.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__item-trigger">
+                            <p class="faq__item-number">
+                                2
+                            </p>
+                            <h6 class="faq__item-title">
+                                Получите крипто-лицензию
+                            </h6>
+                            <div class="faq__item-icon"></div>
+                        </div>
+                        <div class="faq__item-body">
+                            <div class="faq__item-content">
+                                <p class="faq__item-text">
+                                    Лицензия криптобизнес — это разрешительный документ, порядок выдачи которого зависит от законодательства и политики конкретной юрисдикции. Если вам нужна лицензия крипто-бизнес, обратитесь за квалифицированной юридической консультацией и практической помощью в юридическую компанию Crystal Tax.
+                                </p>
+                                <p class="faq__item-text">
+                                    Стоит отметить, что большинство ведущих государств мира на законодательном уровне урегулировали сферу деятельности, связанную с криптовалютой. Большинство юрисдикций применяет риск-ориентированный подход к надзору за криптоактивами. Это означает, что предприятия, представляющие наибольший риск отмывания денег и финансирования терроризма, будут подвергаться более детальной регистрационной оценке и постоянному надзору.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__item-trigger">
+                            <p class="faq__item-number">
+                                3
+                            </p>
+                            <h6 class="faq__item-title">
+                                Ведение бухгалтерского учета в соответствии с действующими нормами
+                            </h6>
+                            <div class="faq__item-icon"></div>
+                        </div>
+                        <div class="faq__item-body">
+                            <div class="faq__item-content">
+                                <p class="faq__item-text">
+                                    Вопрос до сих пор не урегулирован. Проект закона, который должен был урегулировать вопрос налогообложения таких операций, так и остался проектом (законопроект № 2461).
+                                </p>
+                                <p class="faq__item-text">
+                                    Однако в отношении физлиц есть разъяснение ГНС в индивидуальной налоговой консультация от 04.12.2019 г. № 1689/ИПК/04-36-33-02-07. Так, доход физлица, который получен от продажи криптовалюты, надо включать в другие доходы на основании пп. 164.2.20 НКУ. Такие доходы облагаются НДФЛ по основной ставке 18% и военным сбором – по ставке 1,5 %. ГНС в данной ситуации говорит о налогообложении всего дохода, а не разницы между ценой продажи и приобретения.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__item-trigger">
+                            <p class="faq__item-number">
+                                4
+                            </p>
+                            <h6 class="faq__item-title">
+                                Создайте инфраструктуру для функционирования проекта
+                            </h6>
+                            <div class="faq__item-icon"></div>
+                        </div>
+                        <div class="faq__item-body">
+                            <div class="faq__item-content">
+                                <p class="faq__item-text">
+                                    Инфраструктура — это то, от чего зависит работа и прибыль IT-бизнеса. Все процессы, которые происходят с кодом от компьютера разработчика и до продакшена, зависят от бесперебойной работы серверов, ПО, внешних сервисов. Если инфраструктура не работает как надо, бизнес теряет прибыль.
+                                </p>
+                                <p class="faq__item-text">
+                                    Стартапы не особо уделяют внимание инфраструктуре — надо продукт пилить, пока деньги инвесторов не кончились. В больших компаниях уже не до нее — у нас тут тысячи задач, работать надо.
+                                </p>
+                                <p class="faq__item-text">
+                                    До понимания, что инфраструктура IT-компании это тоже продукт, что у нее есть цель, что надо считать затраты и отслеживать метрики, дело часто не доходит.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__item-trigger">
+                            <p class="faq__item-number">
+                                5
+                            </p>
+                            <h6 class="faq__item-title">
+                                Интегрируйте эффективные меры AML/KYC в вашу компанию
+                            </h6>
+                            <div class="faq__item-icon"></div>
+                        </div>
+                        <div class="faq__item-body">
+                            <div class="faq__item-content">
+                                <p class="faq__item-text">
+                                    KYC — Know Your Customer или Know Your Client (Знай своего клиента). Это принцип деятельности финансовых институтов (банков, бирж, букмекерских контор, инвестиционных и паевых фондов), обязывающий их идентифицировать личность контрагента, прежде чем проводить финансовую операцию. Цель такой политики — лучше понимать клиентуру, мониторить финансовые транзакции, снижать риски клиентов, предотвращать взяточничество и коррупцию.
+                                </p>
+                                <p class="faq__item-text">
+                                    Процедуры, направленные на повышение безопасности транзакций, самого клиента финансовых организаций, банков и в конечном итоге государств, очень активно применяются в российских финансовых организациях. Причем не только в банках с иностранным капиталом, часто пионерами нововведений являются и компании финансового профиля с государственным участием.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__item-trigger">
+                            <p class="faq__item-number">
+                                6
+                            </p>
+                            <h6 class="faq__item-title">
+                                Разработка Terms & Conditions, Privacy policy, AML policy
+                            </h6>
+                            <div class="faq__item-icon"></div>
+                        </div>
+                        <div class="faq__item-body">
+                            <div class="faq__item-content">
+                                <p class="faq__item-text">
+                                    А́вторское пра́во — институт гражданского права, регулирующий правоотношения, связанные с созданием и использованием (изданием, исполнением, показом и т. д.) произведений науки, литературы или искусства, то есть объективных результатов творческой деятельности людей в этих областях. Программы для ЭВМ и базы данных также охраняются авторским правом. Они приравнены к литературным произведениям и сборникам, соответственно.
+                                </p>
+                                <p class="faq__item-text">
+                                    Авторское право включает как неимущественные (моральные) права автора, которые неотъемлемы и действуют бессрочно, так и имущественные права на использование произведения, которые автор может передавать другим лицам.
+                                </p>
+                                <p class="faq__item-text">
+                                    Английский термин копира́йт © (англ. copyright, от «копировать» и «право») в английском языке обозначает имущественное авторское право, то есть право копировать, воспроизводить[2].
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="consult">
+            <div class="container">
+                <div class="consult__content">
+                    <h3 class="consult__title">
+                        <span>Хотите получить консультацию или комплексную</span> услугу у квалифицированных специалистов?
+                    </h3>
+                    <p class="consult__text">
+                        По вопросу получения криптолицензии, не тратя своего времени на всю процедуру самому, то смело обращайтесь к нам за помощью!
+                    </p>
+                    <form class="consult__form">
+                        <span class="consult__input-wrapper">
+                            <input class="consult__input" placeholder="Телефон" type="tel">
+                        </span>
+                        <button class="consult__btn btn--accent" type="submit">
+                            <span>Заказать звонок</span>
+                            <img src="img/icons/arrows/btn-arrow.svg" alt="arrow">
+                        </button>
+                    </form>
+                    <img class="consult__img" src="img/consult.svg" alt="consult">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__content">
+                    <a class="logo" href="#">
+                        <img class="logo__img" src="img/logo.svg" alt="logo">
+                    </a>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Форум
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Форум
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Криптовалютная лицензия в Эстонии
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                БУХГАЛТЕРСКОЕ ОБСЛУЖИВАНИЕ
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Советы начинающим предпринимателям
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Новость 1
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Новость 2
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Новость 3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <a class="footer__contacts-btn btn" href="#">
+                        Запросить предложение
+                    </a>
+                    <a class="footer__phone" href="tel:+3726417777">
+                        <svg class="footer__phone-img" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15.5" cy="15.5" r="15.5" fill="#5653E5" />
+                            <path d="M21.9813 19.0705L21.4363 21.4329C21.3598 21.7669 21.0662 22.0006 20.7224 22.0006C14.8094 22.0001 10 17.1908 10 11.2775C10 10.9339 10.2336 10.64 10.5677 10.5638L12.9302 10.0189C13.2742 9.93915 13.6258 10.1177 13.7687 10.4436L14.8591 12.9865C14.9865 13.2861 14.9006 13.6351 14.6486 13.8408L13.3867 14.854C14.1831 16.4764 15.5022 17.7955 17.125 18.5923L18.1581 17.3314C18.3618 17.0787 18.7134 16.9913 19.0129 17.121L21.5559 18.2111C21.8617 18.372 22.0609 18.7283 21.9813 19.0705Z" fill="white" />
+                        </svg>
+                        <span>+372 641-7777</span>
+                    </a>
+                    <ul class="footer__social">
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <img class="footer__social-img" src="img/icons/linkedin.svg" alt="linkedin">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <img class="footer__social-img" src="img/icons/facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <img class="footer__social-img" src="img/icons/youtube.svg" alt="youtube">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <img class="footer__social-img" src="img/icons/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="footer__payments">
+                    <li class="footer__payments__item">
+                        <a class="footer__payments-link" href="#">
+                            <img class="footer__payments-img" src="img/payments/visa.svg" alt="visa">
+                        </a>
+                    </li>
+                    <li class="footer__payments__item">
+                        <a class="footer__payments-link" href="#">
+                            <img class="footer__payments-img" src="img/payments/mastercard.svg" alt="mastercard">
+                        </a>
+                    </li>
+                    <li class="footer__payments__item">
+                        <a class="footer__payments-link" href="#">
+                            <img class="footer__payments-img" src="img/payments/bitcoin.svg" alt="bitcoin">
+                        </a>
+                    </li>
+                    <li class="footer__payments__item">
+                        <a class="footer__payments-link" href="#">
+                            <img class="footer__payments-img" src="img/payments/e-residency.jpg" alt="e-residency">
+                        </a>
+                    </li>
+                    <li class="footer__payments__item">
+                        <a class="footer__payments-link" href="#">
+                            <img class="footer__payments-img" src="img/payments/e-residency-marketplace.jpg" alt="e-residency-marketplace">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <p class="footer__copy">
+                        2021 &copy; Все права защищены, Проект cryptolicense.ee крупнейший поставщик услуги по получению криптовалютных лицензий в Эстонии
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

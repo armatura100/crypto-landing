@@ -1,0 +1,39 @@
+@use 'sass:math';
+$containerWidth: 1220; // 1200 + 20 on the sides
+$base-font-size: 16;
+
+// max-width
+@mixin adaptiveValue($property, $startSize, $endSize) {
+    $difference: $startSize - $endSize;
+    #{$property}: rem($startSize);
+
+    @media (max-width: rem($containerWidth)) {
+        #{$property}: calc(#{$endSize + px} + #{$difference} * (100vw - 320px) / (#{$containerWidth} - 320));
+    }
+}
+
+@function rem($value) {
+    @if (math.is-unitless($value)) {
+        @if ($value  !=0) {
+            @return math.div($value, $base-font-size) * 1rem;
+        }
+
+        @else {
+            @error '#{$value} is zero. Use plain 0 instead';
+        }
+    }
+
+    @else {
+        @error '#{$value} should be unitless';
+    }
+}
+
+$text-light: #59616D;
+$text-color: #3B424E;
+$dark-color: #171B21;
+$accent-color: #5653E5;
+$accent-hover: #1a18bb;
+
+:root {
+    --header-height: 100px;
+}
