@@ -6,4 +6,4 @@ This website contains:
 
 - a few dropdown menus
 - an accordion
-- a slider with a dropdown in its slide
+- a slider with a dropdown inside its slide
